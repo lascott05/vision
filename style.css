@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Medium-O;
+    src: url("../fonts/Orbitron-Medium.ttf");
+}
+
+@font-face {
+    font-family: Regular-M;
+    src: url("../fonts/Montserrat-Regular.otf");
+}
+
+@font-face {
+    font-family: Light;
+    src: url("../fonts/Montserrat-Light.otf");
+}
+
+@font-face {
+    font-family: Light-L;
+    src: url("../f onts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: Light-T;
+    src: url("../fonts/Lato-Thin.ttf");
+}
+
+/*initializing tags with properties*/
+html {
+    font-family: Light-T;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: Regular-M;
+}
+
+
+section {
+    margin-bottom: 10vh;
+}
+
+header .social-box {
+
+    position: grid;
+    grid-template-columns: 1fr 2fr;
+
+    width: 82.8vw;
+    height: 12vh;
+    background: red;
+    margin: 0 0% 0 8%;
+}
+
+
+.social-box .carrier {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid yellow;
+    width: 50vw;
+    position: relative;
+    left: 30px
+}
+
+.icon-big {
+    color: #3cb371;
+    position: absolute;
+    top: 16px;
+    margin-left: 46px;
+    font-size: 30px;
+
+
+}
+
+.carrier {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    right: -50px;
+    grid-column-gap: 1rem;
+}
+
+.carrier div {
+    height: 10vh;
+    width: 20vw;
+
+}
+
+
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.7)), url(./img/img11.jpg);
+    padding: 16% 6% 0;
+    animation-name: myAnimation;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    /* animation-duration: 7s; */
+    position: relative;
+    margin-top: 0px;
+    /* animation-delay: 1s;
+animation-direction:linear;
+animation-iteration-count:4; */
+
+}
+
+.header nav {
+    width: 100%;
+    /* height: 20%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    border-bottom: 0.1px solid whitesmoke;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.center {
+    position: absolute;
+    width: 90vw;
+    height: 100vh;
+
+    left: 50%;
+    transform: translate(-50%, -37%);
+}
+
+
+
+/* .scrolling {
+    background: white;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+} */
+
+
+nav h3 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    /* padding-left: -10px; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    /* border: 1px solid crimson; */
+    font-size: 18px;
+    font-family: poppins;
+    transition: border .2s linear;
+}
+
+nav ul li a:hover {
+    color: #1a1b2f;
+    font-weight: 800;
+    border-left: 3px solid #ffa500;
+    border-right: 3px solid #ffa500;
+    height: 20px;
+}
+
+nav div a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    /* border: 1px solid crimson; */
+    font-size: 17px;
+    font-family: poppins;
+}
+
+
+nav div i {
+    margin-right: 10px;
+}
+
+nav.fixed {
+
+
+    background-color: yellow;
+}
+
+/*button*/
+
+.sign-up {
+    background: #ffa500;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background .2s linear;
+}
+
+.sign-up:hover {
+    background-color: #de9000;
+
+}
+
+
+.header h1,
+.header p {
+    font-size: 60px;
+    line-height: 75px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 70px;
+    padding-left: 40px;
+    animation-name: move;
+    animation-duration: 2s;
+    position: absolute;
+    animation-delay: 0s;
+    top: 30%;
+    animation-timing-function: linear;
+}
+
+.header p {
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 25px;
+    animation-name: move;
+    position: absolute;
+    top: 70%;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+}
+
+
+/* ABOUT US */
+.about {
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+.about-img {
+    padding: 5% 0;
+
+}
+
+.about-img img {
+    width: 80%;
+    position: relative;
+    top: 18%;
+    left: 80px;
+    left: 80px;
+}
+
+.about-text {
+    text-align: left;
+    margin-top: 17%;
+    padding: 0px 30px 0 30px;
+
+
+}
+
+.about-text h2 {
+    font-family: oswald;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #5527;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/*
+
+*/
+.about-text h2::after,
+.about-text h2::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+
+}
+
+.about-text h2::after {
+    position: relative;
+    left: 61.5%;
+    bottom: 13px;
+    border-bottom: 3px solid #ffa500;
+    border-right: 3px solid #ffa500;
+}
+
+.about-text h2::before {
+    position: relative;
+    left: 37%;
+    top: 12px;
+    border-top: 3px solid #ffa500;
+    border-left: 3px solid #ffa500;
+
+}
+
+.about-text p {
+    font-family: open;
+    line-height: 25px;
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateY(85px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes myAnimation {
+    from {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./img/code2.jpg);
+    }
+
+    to {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./img/room1.jpg);
+    }
+}
+
+.teacher-meet {
+    background-image: linear-gradient(rgba(10, 0, 10, .9), rgba(10, 0, 10, .8)), url(img/img6.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff #e33e5a;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
+.teacher-about {
+    margin-left: 50px;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.teacher-about h2 {
+    color: #f5f5f5;
+    font-family: poppins;
+}
+
+
+.box-teacher {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1rem;
+    margin-bottom: 0px;
+    padding: 0 30px 0 30px;
+
+}
+
+
+.teacher {
+    border: 5px solid ghostwhite;
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 260px;
+    height: 50vh
+}
+
+.teacher-about h2,
+.teacher-about h3 {
+    font-family: poppins;
+    color: #f5f5f5;
+    font-weight: 100;
+}
+
+.teacher-name {
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+
+.gallary {
+    height: 100%;
+    display: block;
+
+}
+
+.gallary ul {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+
+}
+
+.gallary ul li {
+    list-style: none;
+
+    /*    border: 2px solid red;*/
+    overflow: hidden;
+    transition: .5s linear;
+    transition: 1s ease-out;
+}
+
+.gallary ul li img {
+
+    display: inline;
+    width: 13vw;
+    height: 23vh;
+    transform: scale(2.5)
+}
+
+.gallary ul li:hover {
+    transform: translate(2px, 2px);
+    transform: scale(.95)
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    /*    z-index: 1;*/
+    padding-top: 100px;
+    left: 0;
+    top: -10%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .8));
+
+}
+
+
+.modal img {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%)
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+.gallary2 {
+    height: 10%;
+    display: block;
+
+}
+
+.gallary2 ul {
+    display: inline-block;
+
+
+}
+
+.gallary2 ul li {
+    display: inline-block;
+    list-style: none;
+    overflow: hidden;
+    transition: .5s linear;
+    transition: 1s ease-out;
+}
+
+.gallary2 ul li img {
+
+    display: inline;
+    width: 13vw;
+    height: 23vh;
+    transform: scale(2.5)
+}
+
+.gallary2 ul li:hover {
+    transform: translate(2px, 2px);
+    transform: scale(.95)
+}
